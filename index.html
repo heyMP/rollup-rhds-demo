@@ -9,9 +9,20 @@
   <link rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" />
   <link rel="stylesheet" href="./dist/bundle.css" />
   <style>
-    body: {
+    body {
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    body > * {
+      width: 100%;
+    }
+
+    main {
+      flex: 1 1 auto;
     }
   </style>
 </head>
@@ -241,6 +252,9 @@
     <pfe-navigation-account slot="account" login-link="#log-in" logout-link="#log-out"></pfe-navigation-account>
 
   </pfe-navigation>
+
+  <main>
+  </main>
 
   <rh-footer data-analytics-region="page-footer">
     <a slot="logo" href="/en"

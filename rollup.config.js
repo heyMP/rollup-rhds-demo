@@ -11,12 +11,12 @@ export default {
   plugins: [
     // Resolve bare module specifiers to relative paths
     resolve(),
-    // // Minify JS
-    // terser({
-    //   ecma: 2020,
-    //   module: true,
-    //   warnings: true,
-    // }),
+    // Minify JS
+    terser({
+      ecma: 2020,
+      module: true,
+      warnings: true,
+    }),
     // Get any CSS in JS imports
     css(),
     // Print bundle summary
@@ -26,13 +26,15 @@ export default {
       targets: 'dist/*'
     }),
   ],
-  // ESM module based dist directory example
-  input: {
-    'rh-footer': './node_modules/@rhds/elements/elements/rh-footer/rh-footer.js',
-    'rh-cta': './node_modules/@rhds/elements/elements/rh-cta/rh-cta.js',
-    'pfe-navigation': './node_modules/@cpelements/pfe-navigation/dist/pfe-navigation.js',
-    'lightdom': './lightdom.css.js',
-  },
+  // Single bundle example
+  input: 'bundle.js',
+  // // ESM module based dist directory example
+  // input: {
+  //   'rh-footer': './node_modules/@rhds/elements/elements/rh-footer/rh-footer.js',
+  //   'rh-cta': './node_modules/@rhds/elements/elements/rh-cta/rh-cta.js',
+  //   'pfe-navigation': './node_modules/@cpelements/pfe-navigation/dist/pfe-navigation.js',
+  //   'lightdom': './lightdom.css.js',
+  // },
   output: [{
     dir: './dist',
     entryFileNames: '[name].js',

@@ -36,7 +36,7 @@ You can then import those files.
 
 Add dependency to `package.json`
 
-package.json
+`package.json`
 ```json
 {
   ...
@@ -50,7 +50,7 @@ package.json
 
 Import your dependency to the bundle entrypoint, `bundle.js`.
 
-bundle.js
+`bundle.js`
 ```js
 import '@rhds/elements/rh-footer/rh-footer.js';
 import '@rhds/elements/rh-cta/rh-cta.js';
@@ -60,7 +60,7 @@ import '@patternfly/pfe-icon';
 
 If you have any lightdom CSS that you would like to include in the bundle add it to the `lightdom.css.js`.
 
-lightdom.css.js
+`lightdom.css.js`
 ```js
 import '@rhds/elements/rh-footer/rh-footer-lightdom.css'
 import '@cpelements/pfe-navigation/dist/pfe-navigation--lightdom.css'

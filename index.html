@@ -1,11 +1,241 @@
-<!-- Required for Red Hat font -->
-<link rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" />
-<script type="module" src="dist/js/modules/rh-footer-entry.js"></script>
-<script type="module" src="dist/js/modules/pfe-cta-entry.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+	<title>RHDS Bundle Example</title>
+  <link rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" />
+  <link rel="stylesheet" href="./dist/bundle.css" />
+</head>
+<body>
+  <!-- These links should be directly after <body> -->
+  <a href="#pfe-navigation" class="visually-hidden skip-link">Skip to navigation</a>
+  <!-- !! Update anchor link to main/content -->
+  <a href="#ADD-ID-TO-MAIN" class="visually-hidden skip-link">Skip to content</a>
 
-<pfe-cta><a href="#">hey</a></pfe-cta>
+  <pfe-navigation id="pfe-navigation" role="banner">
+    <nav class="pfe-navigation" aria-label="Main Navigation">
+      <div class="pfe-navigation__logo-wrapper" id="pfe-navigation__logo-wrapper">
+        <a href="#" class="pfe-navigation__logo-link">
+          <img
+            class="
+              pfe-navigation__logo-image
+              pfe-navigation__logo-image--screen
+              pfe-navigation__logo-image--small"
+            src="https://static.redhat.com/libs/redhat/brand-assets/2/corp/logo--on-dark.svg"
+            width="400" alt="Redhat" />
+          <img
+            class="
+              pfe-navigation__logo-image
+              pfe-navigation__logo-image--print"
+            src="https://static.redhat.com/libs/redhat/brand-assets/2/corp/logo--on-dark.svg"
+            width="400" alt="Orange Joe Inc." />
+        </a>
+      </div>
+      <ul class="pfe-navigation__menu" id="pfe-navigation__menu">
+        <li class="pfe-navigation__menu-item">
+          <a href="#" class="pfe-navigation__menu-link">
+            Products
+          </a>
 
-<section>
+          <div class="pfe-navigation__dropdown">
+            <div>
+              <h3>
+                <a href="#">Stuff and Things</a>
+              </h3>
+              <ul>
+                <li>
+                  <a href="#">Orange Joe's Enterprise</a>
+                </li>
+                <li>
+                  <a href="#">Orange Joe's Bending Unit</a>
+                </li>
+                <li>
+                  <a href="#">Orange Joe's Poppler Collector</a>
+                </li>
+                <li>
+                  <a href="#">Orange Joe's Ship Piloting</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>
+                <a href="#">Ladders</a>
+              </h3>
+              <ul>
+                <li>
+                  <a href="#">Lorem ipsum</a>
+                </li>
+                <li>
+                  <a href="#">Dolor sit amet</a>
+                </li>
+                <li>
+                  <a href="#">Wakka Wakka</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>
+                <a href="#">Chutes</a>
+              </h3>
+              <ul>
+                <li>
+                  <a href="#">Yakkita yakkita</a>
+                </li>
+                <li>
+                  <a href="#">Enterprise Yakkita yakkita</a>
+                </li>
+                <li>
+                  <a href="#">Upstream Yakkita</a>
+                </li>
+                <li>
+                  <a href="#">Yakkita ME</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pfe-navigation__footer">
+              <pfe-cta pfe-priority="primary">
+                <a href="#">Learn more about PFElements</a>
+              </pfe-cta>
+
+              <pfe-cta>
+                <a href="https://github.com/">GitHub</a>
+              </pfe-cta>
+            </div>
+          </div>
+        </li>
+
+        <li class="pfe-navigation__menu-item">
+          <a href="#" class="pfe-navigation__menu-link">
+            Delivery Service
+          </a>
+          <div class="pfe-navigation__dropdown pfe-navigation__dropdown--single-column">
+            <div>
+              <h3>
+                Group 1
+              </h3>
+              <ul>
+                <li>
+                  <a href="#">Orange Joe's Enterprise</a>
+                </li>
+                <li>
+                  <a href="#">Orange Joe's Bending Unit</a>
+                </li>
+                <li>
+                  <a href="#">Orange Joe's Poppler Collector</a>
+                </li>
+                <li>
+                  <a href="#">Orange Joe's Ship Piloting</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>
+                Group 2
+              </h3>
+              <ul>
+                <li>
+                  <a href="#">Orange Joe's Enterprise</a>
+                </li>
+                <li>
+                  <a href="#">Orange Joe's Bending Unit</a>
+                </li>
+                <li>
+                  <a href="#">Orange Joe's Poppler Collector</a>
+                </li>
+                <li>
+                  <a href="#">Orange Joe's Ship Piloting</a>
+                </li>
+              </ul>
+            </div>
+          </div> <!-- end .pfe-navigation__dropdown -->
+        </li>
+        <li class="pfe-navigation__menu-item">
+          <a href="#" class="pfe-navigation__menu-link">
+            Training
+          </a>
+          <div class="pfe-navigation__dropdown pfe-navigation__dropdown--single-column">
+            <ul>
+              <li>
+                <a href="#">Orange Joe's Enterprise</a>
+              </li>
+              <li>
+                <a href="#">Orange Joe's Bending Unit</a>
+              </li>
+              <li>
+                <a href="#">Orange Joe's Poppler Collector</a>
+              </li>
+              <li class="pfe-navigation__sub-nav-link--separator">
+                <a href="#">Orange Joe's Ship Piloting</a>
+              </li>
+              <li>
+                <a href="#">Orange Joe's Ship Piloting Example</a>
+              </li>
+            </ul>
+          </div> <!-- end .pfe-navigation__dropdown -->
+        </li>
+        <li class="pfe-navigation__menu-item">
+          <a href="#" class="pfe-navigation__menu-link">
+            Resources
+          </a>
+        </li>
+        <li class="pfe-navigation__menu-item">
+          <a href="#" class="pfe-navigation__menu-link">
+            Orange Joe's Promise
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Example of a custom link in the secondary section -->
+    <div slot="secondary-links" class="pfe-navigation__secondary-links" id="pfe-navigation__secondary-links">
+      <a href="#" class="">
+        <pfe-icon icon="web-icon-globe" pfe-size="md" aria-hidden="true"></pfe-icon>
+        Deliveries
+      </a>
+    </div>
+
+    <!-- Example of a custom dropdown in the secondary section -->
+    <div slot="secondary-links">
+      <pfe-navigation-dropdown dropdown-width="full" icon="web-globe" name="English">
+        <div class="language-picker">
+          <h3>Select a language</h3>
+          <ul>
+            <li class="pfe-headline-5">
+              <a href="#/zh" class="language-link" xml:lang="zh" hreflang="zh">
+                简体中文
+              </a>
+            </li>
+            <li class="pfe-headline-5">
+              <a href="#/en" class="language-link active" xml:lang="en" hreflang="en" aria-current="page">
+                English
+              </a>
+            </li>
+            <li class="pfe-headline-5">
+              <a href="#/fr" class="language-link" xml:lang="fr" hreflang="fr">
+                Français
+              </a>
+            </li>
+          </ul>
+        </div>
+      </pfe-navigation-dropdown>
+    </div>
+
+    <div slot="search" class="pfe-navigation__search">
+      <form>
+        <label for="pfe-navigation__search-label1">Search</label>
+        <input id="pfe-navigation__search-label1" type="text" placeholder="Search" />
+        <button>Search</button>
+      </form>
+    </div>
+
+    <pfe-navigation-account slot="account" login-link="#log-in" logout-link="#log-out"></pfe-navigation-account>
+
+  </pfe-navigation>
+
   <rh-footer data-analytics-region="page-footer">
     <a slot="logo" href="/en"
       data-analytics-category="Footer"
@@ -171,10 +401,10 @@
     </rh-footer-block>
     <rh-footer-block slot="main-secondary">
       <h3 slot="header" data-analytics-text="Subscribe to our free newsletter">Subscribe to our free newsletter, Red Hat Shares</h3>
-      <pfe-cta><a href="#blocks"
+      <rh-cta><a href="#blocks"
                 data-analytics-category="Footer|About Red Hat"
                 data-analytics-text="Sign up now"
-                >Sign up now</a></pfe-cta>
+                >Sign up now</a></rh-cta>
     </rh-footer-block>
     <rh-global-footer slot="global">
       <h3 slot="links-primary" hidden data-analytics-text="Red Hat legal and privacy links">Red Hat legal and privacy links</h3>
@@ -243,4 +473,9 @@
       </a>
     </rh-global-footer>
   </rh-footer>
-</section>
+
+  <script type="module" src="dist/pfe-navigation.js"></script>
+  <script type="module" src="dist/rh-footer.js"></script>
+  <script type="module" src="dist/rh-cta.js"></script>
+</body>
+</html>

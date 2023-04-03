@@ -22,11 +22,8 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "@cpelements/pfe-navigation": "^1.0.106",
-    "@patternfly/pfe-icon": "1.12.3",
-    "@rhds/elements": "latest"
-  },
-  "overrides": {
-    "@patternfly/pfe-icon": "1.12.3"
+    "@cpelements/pfe-navigation": "^1.0.117",
+    "@patternfly/elements": "^2.0.5",
+    "@rhds/elements": "^1.0.0"
   }
 }

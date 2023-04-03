@@ -6,6 +6,7 @@ import {terser} from 'rollup-plugin-terser';
 import summary from 'rollup-plugin-summary';
 import css from 'rollup-plugin-import-css';
 import del from 'rollup-plugin-delete';
+import path from 'path';
 
 export default {
   plugins: [
@@ -25,6 +26,12 @@ export default {
     del({
       targets: 'dist/*'
     }),
+    /* @todo copy pf-icons out of node_modules */
+    /* copy({ */
+    /*   targets: [ */
+    /*     { src: path.resolve(__dirname, 'node_modules/@patternfly/elements/pf-icon/icons/fab/alipay.js'), dest: path.join('dist') } */
+    /*   ] */
+    /* }), */
   ],
   // Single bundle example
   input: 'bundle.js',

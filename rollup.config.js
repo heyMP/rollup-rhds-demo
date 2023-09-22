@@ -1,12 +1,11 @@
 // import typescript from '@rollup/plugin-typescript';
 // Import rollup plugins
 import resolve from '@rollup/plugin-node-resolve';
-import {terser} from 'rollup-plugin-terser';
+import { terser } from 'rollup-plugin-terser';
 import summary from 'rollup-plugin-summary';
 import css from 'rollup-plugin-import-css';
 import del from 'rollup-plugin-delete';
-import copy from 'rollup-plugin-copy'
-
+import copy from 'rollup-plugin-copy';
 
 export default {
   plugins: [
@@ -32,8 +31,16 @@ export default {
       ]
     }),
   ],
-  // Single bundle example
-  input: 'bundle.js',
+  /** Single bundle example
+  input: 'bundle.js', 
+  */
+  /** Undbundled example */
+  input: [
+    '@rhds/elements/rh-footer/rh-footer.js',
+    '@rhds/elements/rh-cta/rh-cta.js',
+    '@cpelements/pfe-navigation/dist/pfe-navigation.js',
+    'lightdom.css.js',
+  ],
   output: [{
     dir: './dist',
     entryFileNames: '[name].js',

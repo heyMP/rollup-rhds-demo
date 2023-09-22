@@ -31,16 +31,17 @@ export default {
       ]
     }),
   ],
-  /** Single bundle example
+  /** Single bundle example */
   input: 'bundle.js', 
-  */
-  /** Undbundled example */
+
+  /** Undbundled example
   input: [
     '@rhds/elements/rh-footer/rh-footer.js',
     '@rhds/elements/rh-cta/rh-cta.js',
     '@cpelements/pfe-navigation/dist/pfe-navigation.js',
     'lightdom.css.js',
   ],
+  */
   output: [{
     dir: './dist',
     entryFileNames: '[name].js',
